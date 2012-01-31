@@ -1,24 +1,16 @@
 <?php
-require_once 'variables.php';
 require_once 'json.php';
-require_once 'file.php';
 require_once 'html.php';
 class app {
     function __construct() {
-        $this->variables = new variables();
         $this->json = new json();
-        $this->file = new file();
         $this->setclass($this);
     }
-    public $variables;
     public $json;
-    public $file;
 
 
     public function setclass($class){
-        $this->variables->setclass($class);
         $this->json->setclass($class);
-        $this->file->setclass($class);
     }
     public function checkpage($page,$jsonurl) {
         if (file_exists($jsonurl)== FALSE){
@@ -35,4 +27,24 @@ class app {
         return FALSE; # DOES NOT EXISTS
     }
 }
+function objectToArray($d) {
+		if (is_object($d)) {
+			// Gets the properties of the given object
+			// with get_object_vars function
+			$d = get_object_vars($d);
+		}
+ 
+		if (is_array($d)) {
+			/*
+			* Return array converted to object
+			* Using __FUNCTION__ (Magic constant)
+			* for recursive call
+			*/
+			return array_map(__FUNCTION__, $d);
+		}
+		else {
+			// Return array
+			return $d;
+		}
+	}
 ?>

@@ -1,0 +1,18 @@
+TwoKinds Downloader PHP Script
+
+To use this script you will need a PHP server. You could do this at How To Geek if you don't want to install a server.
+http://www.howtogeek.com/howto/14998/turn-your-flash-drive-into-a-portable-web-server
+
+Once you have uploaded or copied to htdocs, navigate to index.php, the errors will disappear once you click update and let it run.
+
+index.php     The archive page
+view.php      The page that the comics are displayed in
+update.php    The page that updates the comic
+comics        dir that the comics are in
+The Rest      PHP files that haddle the basics
+
+NOTE: INDEX.PHP WILL DISPLAY AN ERROR UNTILL YOU UPDATE FOR THE FIRST TIME!
+
+
+All work in the comic is owned by Tom Fischbach under the Creative Commons license.
+Link to TwoKinds: http://twokinds.keenspot.com/

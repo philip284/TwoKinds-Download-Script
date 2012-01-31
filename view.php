@@ -29,9 +29,7 @@ foreach ($json as $YYYYMMDD => $array) {
 }
 $comic_YYYYMMDD = preg_replace('/[^0-9]/', '', $comic_YYYYMMDD);
 $timestamp = strtotime($comic_YYYYMMDD);
-$day = date("l", $timestamp);
-$month = date("F", $timestamp);
-$date = $day . ", " . $month ." ". date("j", $timestamp)  . "<span style=\"font-size:xx-small; vertical-align:top;\">".date("S", $timestamp)."</span>".", ".date("Y", $timestamp);
+$date = date("l", $timestamp) . ", " . date("F", $timestamp) ." ". date("j", $timestamp)  . "<span style=\"font-size:xx-small; vertical-align:top;\">".date("S", $timestamp)."</span>".", ".date("Y", $timestamp);
 list($width, $height, $type, $attr)= getimagesize("comics/twokinds/$comic");
 $width = $width . "px";
 $height = $height . "px";

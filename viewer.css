@@ -1,0 +1,46 @@
+/* 
+    Document   : viewer
+    Created on : Jan 30, 2012, 3:22:16 PM
+    Author     : Philip
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+
+root { 
+    display: block;
+}
+
+body {
+    text-align: center;
+    min-width: 950px;
+}
+
+#main {
+    margin:0 auto;
+    width:950px;
+}
+
+.space {
+    margin-left: 15px;
+    margin-right: 15px;
+    color:white;
+}
+
+#header {
+    
+}
+
+#img {
+    width: 950px;
+    height: 833px;
+}
+
+#navagation {
+    
+}
+

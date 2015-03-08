@@ -39,7 +39,7 @@ while ($differnt==0) {
     ### Download
     $dir = 'comics/twokinds/';
     $filepath = $dir.$filename;
-    $file = file_get_contents($value);
+    $file = file_get_contents('http://twokinds.keenspot.com' . $value);
     ### Compare Files
     $prevpage = $page - 1;
     echo 'starting second check<br>';
